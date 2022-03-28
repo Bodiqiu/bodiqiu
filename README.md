@@ -1,16 +1,16 @@
 ### Hi there 👋
 
-<!--
-**Bodiqiu/bodiqiu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+老师要求微信群打卡，总有那么几个人忘了，要从五六十个人里找出来真的太费事了，所以就写了这个
 
-Here are some ideas to get you started:
+需要python
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+再建一个wg.xls文件，存储每个人的姓名（名字随便，只要你愿意，代码里自己改）
+
+再建一个dk.txt文件，存储打卡的信息，
+
+再建一个dkkk.txt文件，存储没打卡的人的信息
+
+运行完之后直接去dkkk看就行
+
+记得每次用之前需要先删掉dkkk和dk里的数据
+
