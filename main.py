@@ -1,4 +1,3 @@
-from pandas import read_table
 from xlrd import open_workbook
 
 fname = r'wg.xls'
@@ -8,11 +7,12 @@ data = open_workbook(fname)
 table = data.sheets()[0]
 cols = table.col(0)
 
-daka = read_table(rname, sep=',')
 
-for i in daka:
+with open(rname, encoding='UTF-8') as f:
+    data = f.read()  # 读取文件
     for col in cols:
-        if str(col.value) not in str(daka[i].values):
-            with open(xname, "a") as f:
-                f.write(col.value)
-                f.write("\r")
+        if str(col.value) not in data:
+            with open(xname, "a") as j:
+                j.write(col.value)
+                j.write("\r")
+
